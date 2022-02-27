@@ -1,0 +1,112 @@
+.header {
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--home-bg);
+    .nav {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .nav-logo {
+        font-weight: bold;
+        font-size: 25px;
+        span {
+            color: var(--primary-color);
+        }
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+    }
+
+    .nav-link {
+        font-size: 19px;
+        text-transform: capitalize;
+        transition: .3s ease;
+        opacity: 0.4;
+
+        &:hover, &.active {
+            opacity: 1;
+        }
+    }
+
+    .nav-search {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 10px;
+        background-color: #fff;
+        padding: 7px 10px;
+        &-input {
+            background-color: inherit;
+            font-size: 17px;
+            width: 100%;
+            max-width: 130px;
+            &:placeholder-shown{
+                opacity: .4;
+            }
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+
+    &-main {
+        position: relative;
+        margin-top: 100px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+
+    &-left {
+        width: 100%;
+        max-width: 40%;
+    }
+
+    &-order {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 10px;
+    }
+
+    &-watch {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+
+        span {
+            font-size: 19px;
+            color: #333;
+            text-transform: capitalize;
+        }
+        .btn-watch {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                color: #fff;
+                font-size: 17px;
+            }
+        }
+    }
+
+    &-right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    
+    
+}
